@@ -261,7 +261,7 @@ $keyboard = new InlineKeyboardMarkup([[$button]]);
 $sendMessage = new SendMessage($update->getMessage()->getChat()->getId(), 'Click on inline button.');
 $sendMessage->setReplyMarkup($keyboard);
                 
-$bot = new Bot('telegramToken');
+$bot = new Bot('TELEGRAM_TOKEN');
 $bot->sendMessage($sendMessage);
 ```
 
